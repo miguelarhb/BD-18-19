@@ -1,0 +1,107 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>P3-BD</title>
+</head>
+
+<body>
+  <h1>Bases de Dados - 3º Projeto</h1>
+
+  <h2>Eventos de Emergencia</h2>
+
+  <h4><a href="../index.html">Voltar para trás.</a></h4>
+
+  <form action="EE.php" method="post">
+
+  <table>
+    <tr>
+      <td><a href="EE-list.php">Ver Lista com Todos os Eventos de Emergencia</a></td>
+    </tr> <tr><td><br></td></tr>
+
+    <tr>
+      <td><b>Inserir Evento de Emergencia</b></td>
+    </tr>
+    <tr>
+      <td>Numero de Telefone</td>
+      <td align="center"><input type="text" name="newTelefone" size="50" /></td>
+    </tr>
+    <tr>
+      <td>Data da Chamada <ins>aaaa-mm-dd hh:mm:ss</ins></td>
+      <td align="center"><input type="text" name="newDataChamada" size="50" /></td>
+    </tr>
+    <tr>
+      <td>Nome da Testemunha</td>
+      <td align="center"><input type="text" name="newNome" size="50" /></td>
+    </tr>
+    <tr>
+      <td>Local</td>
+      <td align="center"><input type="text" name="newLocal" size="50" /></td>
+    </tr>
+    <tr>
+      <td>ID do Processo de Socorro</td>
+      <td align="center"><input type="text" name="newPS" size="50" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td align="center"><br><input type="submit" value="Enviar"/></td>
+    </tr>
+
+
+    <tr><td><br></td></tr>
+
+
+    <tr>
+      <td><b>Remover Evento de Emergencia</b></td>
+    </tr>
+    <tr>
+      <td>Numero de Telefone</td>
+      <td align="center"><input type="text" name="delTelefone" size="50" /></td>
+    </tr>
+    <tr>
+      <td>Data da Chamada <ins>aaaa-mm-dd hh:mm:ss</ins></td>
+      <td align="center"><input type="text" name="delDataChamada" size="50" /></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td align="center"><br><input type="submit" value="Enviar"/></td>
+    </tr>
+  </table>
+
+</form>
+
+<form action="EE-PS.php" method="post">
+
+<table>
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td><b>Criar Asociação entre Evento de Emergencia e Processo de Socorro</b></td>
+  </tr>
+
+  <tr>
+    <td>Novo Numero do Processo de Socorro</td>
+    <td align="center"><input type="text" name="editPS" size="50" /></td>
+  </tr>
+
+  <tr>
+    <td>Colocar Numero de Telefone</td>
+    <td align="center"><input type="text" name="oldTelefone" size="50" /></td>
+  </tr>
+  <tr>
+    <td>Colocar Data da Chamada <ins>aaaa-mm-dd hh:mm:ss</ins></td>
+    <td align="center"><input type="text" name="oldTempo" size="50" /></td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td align="center"><br><input type="submit" value="Enviar"/></td>
+  </tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>

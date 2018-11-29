@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>P3-BD</title>
+</head>
+
+<body>
+  <h1>Bases de Dados - 3º Projeto</h1>
+
+  <h2>Locais</h2>
+
+  <h4><a href="../index.html">Voltar para trás.</a></h4>
+
+  <form action="local.php" method="post">
+
+  <table>
+    <tr>
+      <td><a href="local-list.php">Ver Lista com Todos os Locais</a></td>
+    </tr> <tr><td><br></td></tr>
+
+    <tr>
+      <td>Inserir Local</td>
+      <td align="center"><input type="text" name="newLocal" size="40" /></td>
+      <td colspan="2" align="center"> <input type="submit" value="Enviar"/></td>
+    </tr>
+
+    <tr>
+      <td>Remover Local</td>
+      <td align="center"><input type="text" name="delLocal" size="40" /></td>
+      <td colspan="2" align="center"> <input type="submit" value="Enviar"/></td>
+    </tr>
+
+    <tr><td><br></td></tr>
+
+  </table>
+
+  </form>
+
+
+  <form action="localmeiosPS-list.php" method="post">
+
+  <b>Listar os meios de Socorro acionados em Processos de Socorro originados num dado Local de incêndio</b>
+
+  <table>
+    <tr>
+      <td>Inserir Local</td>
+      <td align="center"><input type="text" name="findLocal" size="40" /></td>
+      <td colspan="2" align="center"> <input type="submit" onclick="localmeiosPS-list.php" value="Ver"/></td>
+    </tr>
+  </table>
+
+  </form>
+
+</body>
+
+</html>

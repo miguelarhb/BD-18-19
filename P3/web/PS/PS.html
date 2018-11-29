@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>P3-BD</title>
+</head>
+
+<body>
+  <h1>Bases de Dados - 3º Projeto</h1>
+
+  <h2>Processos de Socorro</h2>
+
+  <h4><a href="../index.html">Voltar para trás.</a></h4>
+
+  <form action="PS.php" method="post">
+
+  <table>
+    <tr>
+      <td><a href="PS-list.php">Ver Lista com Todos os Processos de Socorro</a></td>
+    </tr> <tr><td><br></td></tr>
+
+    <tr>
+      <td>Inserir Processo de Socorro</td>
+      <td align="center"><input type="text" name="newPS" size="50" /></td>
+      <td colspan="2" align="center"> <input type="submit" value="Enviar"/></td>
+    </tr>
+
+    <tr>
+      <td>Remover Processo de Socorro</td>
+      <td align="center"><input type="text" name="delPS" size="50" /></td>
+      <td colspan="2" align="center"> <input type="submit" value="Enviar"/></td>
+    </tr>
+
+  </table>
+
+</form>
+
+<form action="PSmeio-list.php" method="post">
+
+<table>
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td><b>Listar Meios Acionados por Processo de Socorro</b></td>
+  </tr>
+
+  <tr>
+    <td>Inserir Processo de Socorro</td>
+    <td align="center"><input type="text" name="findProcesso" size="50" /></td>
+    <td colspan="2" align="center"> <input type="submit" onclick="PSmeio-list.php" value="Ver"/></td>
+  </tr>
+
+</table>
+
+</form>
+
+<form action="PSmeio.php" method="post">
+
+<table>
+  <tr><td><br></td></tr>
+
+  <tr>
+    <td><b>Criar Asociação entre Meio e Processo de Socorro</b></td>
+  </tr>
+
+  <tr>
+    <td>Escolher Processo de Socorro</td>
+    <td align="center"><input type="text" name="pairPS" size="50" /></td>
+  </tr>
+
+  <tr>
+    <td>Escolher Entidade</td>
+    <td align="center"><input type="text" name="pairEntidade" size="50" /></td>
+  </tr>
+  <tr>
+    <td>Escolher Numero do Meio</td>
+    <td align="center"><input type="text" name="pairNumMeio" size="50" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td colspan="2" align="center"> <input type="submit" value="Enviar"/></td>
+  </tr>
+
+</table>
+
+</form>
+
+</body>
+
+</html>
